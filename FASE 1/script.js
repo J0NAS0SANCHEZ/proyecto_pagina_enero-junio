@@ -1,7 +1,9 @@
 const btnLeft = document.querySelector(".btn-left"),
       btnRight = document.querySelector(".btn-right"),
       slider = document.querySelector("#slider"),
-      sliderSection = document.querySelectorAll(".slider-section");
+      sliderSection = document.querySelectorAll(".slider-section"),
+      fulimgbox = document.getElementById("fulimgbox"),
+      fulimg = document.getElementById("fulimg");
 
 btnLeft.addEventListener("click", e => moveToLeft())
 btnRight.addEventListener("click", e => moveToRight() )
@@ -43,8 +45,7 @@ function moveToLeft() {
  //*********************************************************************************************/
 //CATALOGO 
 
-const fulimgbox = document.getElementById("fulimgbox"),
-fulimg = document.getElementById("fulimg");
+
 
 function OpenFullClick(reference) {
     fulimgbox.style.display = "flex";
