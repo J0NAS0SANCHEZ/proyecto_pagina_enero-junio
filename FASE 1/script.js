@@ -49,7 +49,7 @@ function moveToLeft() {
 
 function OpenFullClick(reference) {
     fulimgbox.style.display = "flex";
-    fulimgbox.src = reference
+    fulimg.src = reference
 }
 
 function closeimg () {
