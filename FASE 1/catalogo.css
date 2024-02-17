@@ -9,11 +9,13 @@
 .img-gallery img {
     width: 100%;
     cursor: pointer;
-    transition: 1s;
+    /*transition: 1s;*/
+    transition: .9s;
 }
 
 .img-gallery img:hover {
-    transform: scale(1.2);
+   /*transform: scale(1.2);*/ 
+    opacity:0.5; 
 }
 
 .ful-img
