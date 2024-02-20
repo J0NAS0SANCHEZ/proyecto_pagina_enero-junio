@@ -20,12 +20,16 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     background-color:  #0e0e0e ;
+    min-width: 320px;
+    max-width: 2420px;
+
 }
+
 
 li {
     float: right;
@@ -66,10 +70,20 @@ h1{
 
 /* SLIDER*/
 
+/* .slider {
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+
+    margin: auto;
+    margin-top: 45px;
+scrollbar-width: thin ;
+
+} */
+
 .container-carrousel {
     /* position: absolute; */
-    width: 100%;
-    height: 93.9vh;
+    max-width: 2420px;
     margin-top: 40px; 
     background-color: #e0e0e0;
     /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.66); */
@@ -77,23 +91,34 @@ h1{
     overflow: hidden;
 }
 
+@media only screen and (min-witdh:320px){
+    .container-carrousel{
+        height: 90vh;
+    }
+
+}
+
 .carruseles {
     width: 400%;
     height: 100%;
     display: flex;
-}
+ }
+
+
 
 .slider-section {
-    width: calc(100% / 4);
-    height: 100%;
+        width: calc(100% / 4);
+        height: 100%;
 }
 
 .slider-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* border-radius: 15px; */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* border-radius: 15px; */
 }
+
+
  /*Botones*/
 
 .btn-left,
@@ -119,15 +144,20 @@ h1{
     color: #fff;
 }
 
-.btn-left {
-    left: 0;
-    top: 300px;
+@media only screen and(max-width: 425px) {
+    .btn-left {
+        left: 0;
+        top: 300px;
+    }
+
+    .btn-right {
+        right: 0;
+        top: 300px;
+    }
 }
 
-.btn-right {
-    right: 0;
-    top: 300px;
-}
+
+
 
 .titulo {
     display: flex;
@@ -147,7 +177,7 @@ h1{
     display: flex;
     position: absolute;
     bottom: 15%;
-    left:16%;
+    left:15%;
     font-size: 1.5rem;
     background-color: transparent;
     user-select: none;
