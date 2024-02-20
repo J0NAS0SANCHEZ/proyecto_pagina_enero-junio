@@ -9,7 +9,7 @@ body {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    background-color: #eee;
+    background-color:  #0e0e0e 
     /* padding: 20px; */
 }
 
@@ -83,7 +83,6 @@ scrollbar-width: thin ;
 
 .container-carrousel {
     /* position: absolute; */
-    max-width: 2420px;
     margin-top: 40px; 
     background-color: #e0e0e0;
     /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.66); */
@@ -91,12 +90,23 @@ scrollbar-width: thin ;
     overflow: hidden;
 }
 
-@media only screen and (min-witdh:320px){
+@media only screen and (min-width:320px){
     .container-carrousel{
-        height: 90vh;
+        height: 92vh;
     }
 
 }
+
+
+@media only screen and (max-width:2420px){
+    .container-carrousel{
+        height: 93vh;
+    }
+
+}
+
+
+
 
 .carruseles {
     width: 400%;
@@ -132,7 +142,7 @@ scrollbar-width: thin ;
     padding: 5px;
     font-weight: 600;
     cursor: pointer;
-    color: #ffffff81;
+    color: #9b9898be;
     transform: translate(0,-50%);
     transition: .5s ease;
     user-select: none;
@@ -144,7 +154,7 @@ scrollbar-width: thin ;
     color: #fff;
 }
 
-@media only screen and(max-width: 425px) {
+@media only screen and(max-width: 325px) {
     .btn-left {
         left: 0;
         top: 300px;
@@ -157,33 +167,21 @@ scrollbar-width: thin ;
 }
 
 
-
+/*LETRAS*/
 
 .titulo {
     display: flex;
     position: absolute;
     top: 50%;
-    font-size: 4.5rem;
-    background-color: transparent;
-    user-select: none;
-    color: rgb(70, 69, 69);
-    font-family: Arial, Helvetica, sans-serif;
-    left: 200px;
-    font-weight: 600;
     transform: skew(10deg);
+    margin: 0;
+    font-size: clamp(2em, 5vw, 5em);
+    
 }
 
-.subtitulo {
+.titulo p {
     display: flex;
-    position: absolute;
-    bottom: 15%;
-    left:15%;
-    font-size: 1.5rem;
-    background-color: transparent;
-    user-select: none;
-    color: rgb(70, 69, 69);
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-size: calc(1.2vw + 0.7);
+    color: rgb(131, 128, 128);
     font-weight: 600;
-    transform: skew(10deg);
 }
