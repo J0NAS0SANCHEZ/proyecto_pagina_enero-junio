@@ -12,9 +12,10 @@
     <header class="header">
         <nav class="header-nav">
             <ul>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="">Contacto</a></li>
                 <li class="inmuebles"> <a href="catalogo.html">Inmuebles</a></li>
                 <li class="inicio"> <a href="index.html">Inicio</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -28,20 +29,48 @@
 
      <div class="container-helpbar">
         <div class="helpbar">
-            <div class="Locales button">LOCALES</div>
-            <div class="Dispo button">DISPONIBLES</div>
-            <div class="Otro button">OTRO</div>        
+            <div class="Locales button"><a href="#locales">LOCALES</a></div>
+            <div class="Dispo button"><a href="#dispo">DISPONIBLES</a></div>
+            <div class="Otro button"><a href="#otro">OTRO</a></div>        
         </div>
     </div>
    
+    <div class="dropdown">
+        <img class="dropdown-btn" src="img/John Constantine.jpg" alt="">
+        <div class="dropdown-content">
+            <a href="#">Iniciar Sesion</a>
+            <a href="#">Registrarse</a>
+            <a href="#">Otro</a>
+        </div>
+    </div>
 
     <div class="img-gallery">
-        <img class="img1" src="img/1.jpg" onclick="OpenFullClick(this.src)" width="640" height="427">
-        <img src="img/2.png" onclick="OpenFullClick(this.src)" width="640" height="427">
+        <div class="seccion s1" id="locales">
+             <img src="img/1.jpg" onclick="OpenFullClick(this.src)" width="640" height="427">
+             <section class="info" >
+                <h2>Seccion 1</h2>
+             </section>
+        </div>
+        
+        <div class="seccion s2" id="dispo">
+            <section class="info">
+                <h2>Seccion 2</h2>
+            </section>
+            <img src="img/2.png" onclick="OpenFullClick(this.src)" width="640" height="427">
+        </div>
+
+        <div class="seccion s3" id="otro">
+            <img src="img/3.jpg" onclick="OpenFullClick(this.src)" width="640" height="427">
+            <section class="info">
+                <h2>Seccion 3</h2>
+            </section>
+        </div>
+       
+        <!-- <img src="img/2.png" onclick="OpenFullClick(this.src)" width="640" height="427">
         <img src="img/3.jpg" onclick="OpenFullClick(this.src)" width="640" height="427">
         <img src="img/4.jpg" onclick="OpenFullClick(this.src)" width="640" height="427">
         <img src="img/5.jpg" onclick="OpenFullClick(this.src)" width="640" height="427">
-        <img src="img/6.jpg" onclick="OpenFullClick(this.src)" width="640" height="427">
+        <img src="img/6.jpg" onclick="OpenFullClick(this.src)" width="640" height="427"> -->
         <!-- <img src="img/Fondo1.jpg" onclick="OpenFullClick(this.src)" width="640" height="427">
         <img src="img/FLEE.jpg"   onclick="OpenFullClick(this.src)" width="640" height="427">
         <img src="img/FIGHT.jpeg" onclick="OpenFullClick(this.src)" width="640" height="427"> -->
@@ -50,10 +79,10 @@
 
     <style>
         .inicio{
-            background-color: #333;
+            background-color:#0e0e0e;
         }
         .inmuebles {
-            background-color:#0e0e0e ;
+            background-color:#4CAF40 ;
         }
     </style>
 
