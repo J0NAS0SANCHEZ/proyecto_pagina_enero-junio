@@ -9,7 +9,7 @@ body {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    background-color:  #0e0e0e 
+    background-color:  #0e0e0e; 
     /* padding: 20px; */
 }
 
@@ -19,7 +19,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: absolute;
     top: 0;
     left: 0;
@@ -48,15 +48,53 @@ li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* ul img {
+.dropdown img {
     display:block;
-    height: 50px;
-    width: 50px;
-    position: fixed;
+    height: 40px;
+    width: 40px;
+    position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     border-radius: 40px;
-} */
+}
+
+
+.dropdown-btn{
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display:block;
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+    min-width: 160px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-btn{
+    background-color: #3e8c41;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
 
 .inicio {
     background-color: #4CAF40;
@@ -157,12 +195,12 @@ scrollbar-width: thin ;
 @media only screen and(max-width: 325px) {
     .btn-left {
         left: 0;
-        top: 300px;
+        top: 0;
     }
 
     .btn-right {
         right: 0;
-        top: 300px;
+        top: 0;
     }
 }
 
@@ -173,15 +211,20 @@ scrollbar-width: thin ;
     display: flex;
     position: absolute;
     top: 50%;
+    left: 10%;
     transform: skew(10deg);
     margin: 0;
-    font-size: clamp(2em, 5vw, 5em);
+    font-size: clamp(2em, 7vw, 5em);
     
 }
 
 .titulo p {
     display: flex;
-    font-size: calc(1.2vw + 0.7);
-    color: rgb(131, 128, 128);
+    font-size: calc(2.2vw + 0.8);
+    background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(214, 212, 99),rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
     font-weight: 600;
 }
+
