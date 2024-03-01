@@ -1,131 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    background-color:  #0e0e0e; 
-    /* padding: 20px; */
-}
-
-/*NAVEGACION*/
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    /* overflow: hidden; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color:  #0e0e0e ;
-    min-width: 320px;
-    max-width: 2420px;
-
-}
-
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 14px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.dropdown img {
-    display:block;
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 40px;
-}
-
-
-.dropdown-btn{
-    cursor: pointer;
-}
-
-.dropdown{
-    position: relative;
-    display:block;
-}
-
-.dropdown-content{
-    display: none;
-    position: fixed;
-    background-color: #f9f9f9;
-    margin-top: 40px;
-    min-width: 160px;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover{
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-btn{
-    background-color: #3e8c41;
-}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-}
-
-.inicio {
-    background-color: #4CAF40;
-} 
-
-h1{
-    color: white;
-}
-
-/*************************************************************/
-
-/* SLIDER*/
-
-/* .slider {
-    width: 75vw;
-    max-width: 1000px;
-    min-width: 320px;
-
-    margin: auto;
-    margin-top: 45px;
-scrollbar-width: thin ;
-
-} */
-
 .container-carrousel {
     /* position: absolute; */
-    margin-top: 40px; 
+    margin-top: 5px; 
     background-color: #e0e0e0;
     /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.66); */
     /* border-radius: 15px; */
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 @media only screen and (min-width:320px){
@@ -167,42 +46,53 @@ scrollbar-width: thin ;
 }
 
 
- /*Botones*/
 
-.btn-left,
-.btn-right {
-    display: flex;
+/***********************************/
+
+
+.card-container {
     position: absolute;
     top: 50%;
-    font-size: 3.5rem;
-    background-color: transparent;
-    border-radius: 50%;
-    padding: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #9b9898be;
-    transform: translate(0,-50%);
-    transition: .5s ease;
-    user-select: none;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+
 }
 
-.btn-left:hover,
-.btn-right:hover {
-    background-color: #333333d4;
-    color: #fff;
-}
+.container-carrousel {
+    position: relative;
+  }
 
-@media only screen and(max-width: 325px) {
-    .btn-left {
-        left: 0;
-        top: 0;
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 1440px) {
+    .card {
+      margin-top: 100px;
+      width: 100%;
+      height: 40%;
     }
+  }
 
-    .btn-right {
-        right: 0;
-        top: 0;
-    }
-}
+  .navbar-nav .nav-link {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: .5s;
+  }
+
+
+  .navbar-nav .nav-link:hover {
+    transform: scale(1.0,1.5);
+  }
+  
+  .navbar-brand {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+  }
 
 
 /*LETRAS*/
@@ -211,20 +101,47 @@ scrollbar-width: thin ;
     display: flex;
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 5%;
     transform: skew(10deg);
     margin: 0;
     font-size: clamp(2em, 7vw, 5em);
-    
 }
 
 .titulo p {
     display: flex;
     font-size: calc(2.2vw + 0.8);
-    background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(214, 212, 99),rgb(255, 255, 255));
+    background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(250, 247, 49),rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: tomato;
     font-weight: 600;
+}
+
+
+  
+ /*FOOTER***************************/
+
+
+ footer {
+  background-color: #000;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+footer p {
+  font-family: sans-serif;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
 }
 
