@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-Mex">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,80 +11,145 @@
     <link rel="stylesheet" href="style.css">
     <title>Pagina</title>
 </head>
-<body>
+  <body>
 
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="img/1.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top font">
-        MIDGARD</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="catalogo.html">Inmuebles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contactanos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Acerca de...</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-<article>
-    
-<!--TARJETA-->
-    <div class="card-container" id="cardContainer">
-      <div class="card">
-        <img src="img/edi1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">INMUEBLES XD</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="catalogo.html" class="btn btn-primary">IR AQUI!</a>
+    <!-----Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/1.png" alt="Logo" width="35px" height="35px" class="d-inline-block align-text-top font">
+            MIDGARD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-disabled="true">Acerca de...</a>
+                        </li>
+                    </ul>
+                    <div class="btn-nav">
+                        <button class="btn btn-outline-light btn-sec"><a class="nav-link" aria-disabled="true">Registrarse</a></button>
+                        <button class="btn btn-outline-primary btn-pri"><a class="nav-link" aria-disabled="true">Iniciar sesión</a></button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </nav>
 
-    <!--CARRUSEL-->
-    <div class="container-carrousel">
-        <div class="carruseles" id="slider">
-            <section class="slider-section">
-                <img src="img/sujeto1.jpg" alt="">
-            </section>
-            <section class="slider-section">
-                <img src="img/fondo3.jpg" alt="">
-            </section>
-            <section class="slider-section">
-                    <img src="img/edi4.jpg" alt="">
-            </section>
-            <section class="slider-section">
-                <img src="img/edi1.jpg" alt="">
-            </section>
+    <article>
+      
+        <!--TARJETA-->
+        <div class="card-container" id="cardContainer">
+            <div class="card">
+                <img src="img/Dep1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Encontramos el inmueble ideal para ti</h5>
+                    <p class="card-text">Deja de preocuparte por encontrar un inmueble, 
+                        nosotros lo hacemos por ti para que puedas ocupar tu tiempo en lo que necesites.
+                    </p>
+                    <a href="catalogo.html" class="btn btn-primary">IR AQUI!</a>
+                </div>
+            </div>
         </div>
-          <!-- BOTONES DEL CARRUSEL !NO BORRAR -->  
-        <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
-        <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
-    </div>
 
-   
-    
-    <div class="titulo texto"><p>Midgard <br>Inmuebles</p></div> 
-</article> 
-    
-</body>
-<!--BOOTSTRAP 5 SCRIPT-->
-<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!--SCRIPT LOCAL-->
-<script src="script.js"></script>
+        <!--CARRUSEL-->
+        <div class="container-carrousel">
+            <div class="carruseles" id="slider">
+                <section class="slider-section">
+                    <img src="img/sujeto1.jpg" alt="">
+                </section>
+                <section class="slider-section">
+                    <img src="img/fondo3.jpg" alt="">
+                </section>
+                <section class="slider-section">
+                        <img src="img/edi4.jpg" alt="">
+                </section>
+                <section class="slider-section">
+                    <img src="img/edi1.jpg" alt="">
+                </section>
+            </div>
+                <!-- BOTONES DEL CARRUSEL !NO BORRAR -->  
+            <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+            <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+        </div>
+
+        <div class="titulo texto"><p>Midgard <br>Inmuebles</p></div> 
+
+        <!---Opciones-->
+
+        <div class="Opciones">
+            <span class="icon-container">
+                <img src="img/edi1.jpg" alt="Informacion"><a href="#">Informacion</a>
+            </span>
+            <span class="icon-container">
+              <img src="img/fecha.jpg" alt="Fechas">
+              <a href="#">Fechas</a>
+            </span>
+            <span class="icon-container">
+              <img src="img/catalago.jpeg" alt="Catalogo">
+              <a href="#">Catalogo</a>
+            </span>
+            <span class="icon-container">
+              <img src="img/calendario.jpg" alt="Reservaciones">
+              <a href="#">Reservaciones</a>
+            </span>
+        </div>
+
+        <!-------Tarjetas-->
+
+        <div class="Populares">
+            <h1>Lo más popular</h1>
+            <p>"Abriendo las puertas a tu nuevo mundo."</p>
+            <div class="card-group">
+                <div class="card">
+                    <img src="img/Playa1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Frente a la playa</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-primary">IR AQUI!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Estudiantes1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Departamentos para estudiantes</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">IR AQUI!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Casa1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Las mejores casas</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <a href="#" class="btn btn-primary">IR AQUI!</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+  </article> 
+      
+  </body>
+  <!--BOOTSTRAP 5 SCRIPT-->
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--SCRIPT LOCAL-->
+  <script src="js/script.js"></script>
 </html>
